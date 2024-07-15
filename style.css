@@ -1,0 +1,158 @@
+@import url(variable.css);
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+h1{
+    padding: 15px;
+}
+
+.container-index {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.site-header, .site-footer {
+    background-color: #4eaf63;
+    color: rgb(0, 0, 0);
+}
+
+.main-navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation li {
+    margin: 0 15px;
+}
+
+.main-navigation a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.main-navigation a:hover {
+    background-color: #5d547a;
+    border-radius: 3px;
+}
+
+.profile-pic {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.project-grid {
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contact-info a {
+    margin-top: 1px;
+    display: inline-block;
+    background-color: #5d547a;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-info a:hover {
+    background-color: #c5bce4;
+}
+
+.main-navigation li {
+    padding: 0 15px;
+}
+
+.container-img {
+    padding: 25px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+.container-img2 {
+    padding: 25px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: background-color 0, 3s;
+}
+
+.card-container {
+    border-bottom: 3px solid;
+    background-color: #4eaf63;
+    padding: 0px;
+    margin: 25px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0 0 15px #383838;
+}
+
+.card-container:hover {
+    background-color: #2f7e40;
+}
+
+.clearfix::after {
+    padding: 25px;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-with: 768px){
+    .main-navigation ul{
+        flex-direction: column;
+    }
+    .main-navigation li{
+        margin-bottom: 10px;
+        font-size: large;
+    }
+    .profile-pic{
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@keyframes fadeIn {
+    from{ opacity: 0;}
+    to{opacity: 1;}
+    
+}
