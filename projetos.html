@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Eduardo Roberto Germano, um aluno de Engenharia de Software. Confira meus projetos e como entrar em contato.">
+    <meta name="keywords" content="desenvolvedor web, portfólio, projetos web, formação em programação">
+    <meta name="author" content="Eduardo Roberto Germano">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Portfólio - Desenvolvimento Web">
+    <meta property="og:description" content="Portfólio de Eduardo R. Germano, desenvolvedor web.">
+    <meta property="og:image" content="URL_da_Imagem_de_Destaque">
+    <meta property="og:url" content="URL_da_Página">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Portfólio - Desenvolvimento Web">
+    <meta name="twitter:description" content="Portfólio de Eduardo R. Germano, desenvolvedor web.">
+    <meta name="twitter:image" content="URL_da_Imagem_de_Destaque">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link href="style.css" rel="stylesheet" />
+    <title>Portfólio Eduardo</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">Projetos Desenvolvidos</div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="card-container">
+            <a href="https://github.com/EduardorGermano/APP-controle-de-bar">
+                <img class="container-img2" src="Img/image.jpg" alt="Projeto APP Bar" />
+            </a>
+            <div>
+                <h3>Projeto APP Bar</h3>
+                <p>Projeto desenvolvido para controle de bar durante festas</p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <a href="https://github.com/EduardorGermano/projeto-leilao">
+                <img class="container-img2" src="Img/image.jpg" alt="Projeto comercial" />
+            </a>
+            <div>
+                <h3>Projeto comercial</h3>
+                <p>Projeto desenvolvido com metodologia Scrum</p>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <a href="https://github.com/EduardorGermano/jogo-2d-poo-2023">
+                <img class="container-img2" src="Img/image.jpg" alt="Projeto sistema operacional simulado" />
+            </a>
+            <div>
+                <h3>Projeto sistema operacional simulado</h3>
+                <p>Um sistema operacional realizado para conclusão da materia de sistema operacional(SO)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Eduardo R. Germano. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
